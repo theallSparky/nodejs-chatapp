@@ -7,9 +7,9 @@ function App() {
   const [user, setUser] = useState(undefined)
 
   if (!user) {
-    return <AuthPage onauth={(user) => setUser(user)} />
+    return <AuthPage onAuth={(user) => setUser(user)} />
   } else {
-    <ChatsPage user={(user)} />
+    return <ChatsPage user={(user)} />
   }
 }
 
